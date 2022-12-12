@@ -18,7 +18,7 @@ Some of our strongest geographic and cultural associations are tied to a region'
 
 During the cleaning process, one of my team members recommended that we determine if there are any duplicate rows. We found that there only 20 unique lists of ingredients in the entire dataset. This meant that recipes from different cuisines required the same ingredients. From this discovery, we chose to focus on retaining as much information about each ingredient at possible.
 
-If an ingredient had more than one entity (i.e. Olive Oil), it may have lost it's value if it wasn't accounted for during vecotrizing. So, I created a class that would return a new vocabulary to input into our vectorizer. 
+There were some ingredients that had more than one word (i.e. Olive Oil). These ingredients may have lost their value if their sequence wasn't accounted for during vectorizing. So, I created a class that would return a new vocabulary to input into our vectorizer. 
 
 ```Python
 class ProcessedFoods:
